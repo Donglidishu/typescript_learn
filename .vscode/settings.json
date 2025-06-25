@@ -1,0 +1,15 @@
+{
+  // ① 开启保存时自动格式化
+  "editor.formatOnSave": true,
+
+  // ② 指定 Prettier 作为 TS 的默认格式化器
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ③ 如果你启用了 requireConfig，让 Prettier 一定找到配置文件
+  "prettier.requireConfig": false
+}
