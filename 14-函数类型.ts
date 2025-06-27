@@ -15,3 +15,9 @@ const add2 = (num3: number, num4: number): number => {
 const add3: (num5: number, num6: number) => number = (num5, num6) => {
   return num5 + num6;
 };
+
+//3.void类型
+function greet(name: string): void {
+  console.log('hello', name);
+}
+greet('xzk');
