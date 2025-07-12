@@ -4,11 +4,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run TypeScript with ts-node",
+      "name": "Run Current TS File",
       "runtimeExecutable": "npx",
       "runtimeArgs": ["ts-node"],
-      "args": ["${workspaceFolder}/index.ts"],
-      "cwd": "${workspaceFolder}"
+      "args": ["${file}"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json"
+      }
     }
   ]
 }

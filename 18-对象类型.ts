@@ -14,6 +14,7 @@
 // };
 
 //上述第三点的写法
+//prettier默认格式化为多行，所以以多行形式呈现
 let person: {
   Name: string;
   Age: number;
